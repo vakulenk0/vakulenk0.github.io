@@ -1,9 +1,16 @@
 <!DOCTYPE html >
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
+
+
+
+
 <body>
 
 <h4 id="#list">Список ссылок основной навигации сайта с подписями title;</h4>
@@ -52,8 +59,8 @@
     <li><a href="about/">относительную на страницу в каталоге about; </a></li>
     <li><a href="../1.html">относительную на страницу в каталоге уровнем выше текущего; </a></li>
     <li><a href="../../2.html">относительную на страницу в каталоге двумя уровнями выше;</a></li>
-    <li><a href="/">сокращенную на главную;</a></li>
-    <li><a href="/about"> сокращенную ссылку на внутреннюю. </a></li>
+    <li><a href="index.html">сокращенную на главную;</a></li>
+    <li><a href="index.html/about"> сокращенную ссылку на внутреннюю. </a></li>
 
 
 </ol>
@@ -62,19 +69,20 @@
 
 <h2>Форма</h2>
 
-<form action="/" method="POST">
-    Имя: <br>
+<form action="/" method="post">
+
     <label>
+        Имя: <br>
         <input name="field-name" value="Введите ваше имя"/>
     </label> <br>
 
-    Ваш email: <br>
     <label>
+        Ваш email: <br>
         <input name="field-email" type="email" value="Введите email"/>
     </label><br>
-
-    Дата: <br>
+    
     <label >
+        Дата: <br>
         <input name="field-data" type="date" value=""/>
     </label> <br>
 
