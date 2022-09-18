@@ -4,27 +4,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Сайт крутышки</title>
+
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 
-
-
 <body>
 
-<h4 id="#list">Список ссылок основной навигации сайта с подписями title;</h4>
+
+
+<header > <!--Шапка(лого + название сайта)-->
+    <img src="https://color23.ru/content/pxp-template-set-cover/3D03BF496F9EAEA6654DA5B2AA97752C.jpg?size=L" alt="Error">
+    <h2>Крутышка.com</h2>
+
+</header>
+
+
+
+<!--Нав. панель-->
 <nav >
-    <ul>
-        <li><a href="#about" title="Компания КубГУ">О компании</a></li>
-        <li><a href="#services" title="Услуги КубГУ">Услуги</a></li>
-        <li><a href="#contacts" title="Контакты КубГУ">Контакты</a></li>
+    <h3  id="#list">Список ссылок основной навигации сайта с подписями title;</h3>
+    <ul >
+        <li><a  href="#hyperlink" title="Гиперссылки(маркированный список)">Список гиперссылок</a></li>
+        <li><a href="#table" title="Таблица(:D)">Таблица</a></li>
+        <li><a href="#form" title="Можешь отправить свои данные :'D">Форма</a></li>
     </ul>
 </nav>
-<br>
+<br><br>
 
 
-<ol>
+
+<!--Список гиперссылок-->
+<ol id="hyperlink">
 
     <li><a href="http://Example.com/">абсолютную гиперссылку на главную страницу сайта example.com; </a></li>
     <li><a href="https://Example.com/">абсолютную на главную сайта example.com в протоколе https;</a></li>
@@ -63,13 +77,30 @@
     <li><a href="index.html/about"> сокращенную ссылку на внутреннюю. </a></li>
 
 
-</ol>
+</ol><br>
 
-<br>
 
-<h2>Форма</h2>
 
-<form action="/" method="post">
+
+<h1>
+<!--Таблица-->
+<table id="table1">
+    <tbody>
+    <tr><th>Имя</th><th class="table-th" >Фамилия</th><th class="table-th" >Отчество</th></tr> <!--ряд с ячейками заголовков-->
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    <tr><td class="notUnion" style="background: green">1</td><td class="notUnion" style="background: green">2</td><td class="notUnion" style="background: green">3</td></tr>
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    <tr><td class="notUnion" style="background: green" >1</td><td class="notUnion" style="background: green">2</td><td class="notUnion" style="background: green">3</td></tr>
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    </tbody>
+</table>
+</h1>
+
+
+
+<!--Форма-->
+<form id="form" action="/" method="post">
+    <h2>Форма</h2><br>
 
     <label>
         Имя: <br>
@@ -80,7 +111,7 @@
         Ваш email: <br>
         <input name="field-email" type="email" value="Введите email"/>
     </label><br>
-    
+
     <label >
         Дата: <br>
         <input name="field-data" type="date" value=""/>
@@ -118,7 +149,7 @@
     <label>
         Сверхспособности:
         <br >
-        <select name="field-name-4"
+        <select name="field-name-4[]"
                 multiple="multiple">
             <option>
                 Бессмертие
@@ -147,13 +178,20 @@
     </label>
 
     <label >
+
         <input type="submit" value="Отправить">
 
     </label>
 
 
-
 </form>
+
+
+
+<!--Подвал-->
+<footer id="footer1">
+    <h3> (с) Крутышка 2022 </h3>
+</footer>
 
 
 
