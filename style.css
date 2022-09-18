@@ -1,0 +1,61 @@
+
+header img {
+    height: 291px;
+    width: 200px;
+    float: left;
+    margin-left: 350px;
+    border: 2px solid black;
+}
+
+h2{
+    margin-bottom: 200px;
+    margin-top: 70px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+form h2 {
+    margin-bottom: 60px;
+    margin-top: 15px
+}
+
+nav, ol, form{
+    max-width: 960px;
+    text-align: center;
+    margin-left: 450px;
+}
+
+header, nav, ol, form, footer{
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+
+
+header, form{
+    margin-bottom: 20px;
+
+}
+
+#footer1{
+    padding-left: 20px;
+}
+
+th.table-th {
+    padding-left: 5px;
+}
+
+#table1 {
+    margin-left: 760px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    max-width: 960px;
+    text-align: center;
+}
+
+
+#table1.Union {
+    background: orange;
+}
+
