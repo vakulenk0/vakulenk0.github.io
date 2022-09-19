@@ -52,6 +52,7 @@ th.table-th {
     border: 2px solid black;
     max-width: 960px;
     text-align: center;
+    width: 960px;
 }
 
 
