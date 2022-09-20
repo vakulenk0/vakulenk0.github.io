@@ -17,18 +17,24 @@ h2{
 
 form h2 {
     margin-bottom: 60px;
-    margin-top: 15px
+    margin-top: 15px;
+    
 }
 
-nav, ol, form{
+ nav, ol, form, table{
     max-width: 960px;
     text-align: center;
-    margin-left: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
 }
 
-header, nav, ol, form, footer{
+
+
+
+ nav, ol, form{
     background-color: aqua;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 
@@ -38,7 +44,7 @@ header, form{
 
 }
 
-#footer1{
+#footer1 {
     padding-left: 20px;
 }
 
@@ -47,7 +53,6 @@ th.table-th {
 }
 
 #table1 {
-    margin-left: 450px;
     margin-bottom: 30px;
     border: 2px solid black;
     max-width: 960px;
@@ -60,3 +65,16 @@ th.table-th {
     background-color: orange;
 }
 
+header {
+    width:100%;
+    padding: 10px;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    width:100%;
+    padding: 10px;
+    background-color: aqua;
+    border-top: 1px solid black;
+}
