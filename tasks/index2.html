@@ -1,1 +1,200 @@
+<!DOCTYPE html >
+<html lang="en">
 
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт крутышки</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+
+
+<body style="margin: 0;">
+
+
+
+<header > <!--Шапка(лого + название сайта)-->
+    <img src="https://color23.ru/content/pxp-template-set-cover/3D03BF496F9EAEA6654DA5B2AA97752C.jpg?size=L" alt="Error">
+    <h2>Крутышка.com</h2>
+
+</header>
+
+
+
+<!--Нав. панель-->
+<nav>
+    <h3  id="list">Список ссылок основной навигации сайта с подписями title;</h3>
+    <ul>
+        <li><a  href="#hyperlink" title="Гиперссылки(маркированный список)">Список гиперссылок</a></li>
+        <li><a href="#table" title="Таблица(:D)">Таблица</a></li>
+        <li><a href="#form" title="Можешь отправить свои данные :'D">Форма</a></li>
+    </ul>
+</nav>
+<br><br>
+
+
+
+<!--Список гиперссылок-->
+
+<ol id="hyperlink" style="width: 920px">
+
+    <li><a href="http://Example.com/">абсолютную гиперссылку на главную страницу сайта example.com; </a></li>
+    <li><a href="https://Example.com/">абсолютную на главную сайта example.com в протоколе https;</a></li>
+    <li><a href="ftp://myfile.zip">ссылку на файл на сервере FTP без авторизации;</a></li>
+    <li><a href="ftp://user:password@example.com/myfile.zip">ссылку на файл на сервере FTP с авторизацией; </a></li>
+    <li><a href="https://Example.com/page#elemend_id"> ссылку на фрагмент страницы некоторого сайта; </a></li>
+    <li><a href="#element_id">ссылку на фрагмент текущей страницы; </a></li>
+    <li><a href="https://Example.com?size=m&color=white">ссылку с двумя параметрами в URL;</a></li>
+    <li><a href="#list">список ссылок основной навигации сайта с подписями title</a></li>
+    <li><a>ссылку без href;</a></li>
+    <li><a href="">ссылку с пустым href;</a></li>
+    <li><a href="" rel="nofollow"> ссылку, по которой запрещен переход поисковикам;</a></li>
+    <li><a href="" rel="noindex">запрещенную для индексации поисковиками;</a></li>
+    <li><p> Латинский язык включает в себя 21 различных символов. Буква ⟨C⟩ была <br>
+        западной формой греческой гаммы, <a href="https://Example.com/">но она использовалась для обозначения</a> <br>
+        звуков /ɡ / и / k / одинаково, возможно, под влиянием этрусского языка, <br>
+        в котором, возможно, отсутствовали какие-либо звонкие звуки.</p>
+    </li>
+    <li>
+        <a href="https://Example.com">
+            <img src="https://dachnoedelo.ru/images/wp-content/uploads/2017/11/Gazaniya-40.jpg" alt="Error">
+        </a>
+    </li>
+    <li>
+        <img  src = "https://www.learningprintable.com/wp-content/uploads/2019/12/Educational-Activities-for-3-Year-Olds-Printable-Shape-772x350.jpg" usemap = "#pr" alt = "Прямоугольник и круг" >
+        <map name = "pr" >
+            <area shape = "rect" coords = "457,39,704,300" href = "Example.com" alt = "Прямоугольник" >
+            <area shape = "circle" coords = "222,166,150" href = "NotExample.com" alt = "Круг" >
+        </map>
+    </li>
+    <li><a href="./">относительную на страницу в текущем каталоге; </a></li>
+    <li><a href="about/">относительную на страницу в каталоге about; </a></li>
+    <li><a href="../1.html">относительную на страницу в каталоге уровнем выше текущего; </a></li>
+    <li><a href="../../2.html">относительную на страницу в каталоге двумя уровнями выше;</a></li>
+    <li><a href="index.html">сокращенную на главную;</a></li>
+    <li><a href="index.html/about"> сокращенную ссылку на внутреннюю. </a></li>
+    <li><a href="./tasks/index2.html">Ссылка на 2ое задание</a></li>
+
+
+</ol><br>
+
+
+
+
+
+<!--Таблица-->
+<table id="table">
+    <tbody>
+    <tr><th>Имя</th><th class="table-th" >Фамилия</th><th class="table-th" >Отчество</th></tr> <!--ряд с ячейками заголовков-->
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    <tr><td class="notUnion" style="background: green">1</td><td class="notUnion" style="background: green">2</td><td class="notUnion" style="background: green">3</td></tr>
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    <tr><td class="notUnion" style="background: green" >1</td><td class="notUnion" style="background: green">2</td><td class="notUnion" style="background: green">3</td></tr>
+    <tr><td colspan="3" class="Union" style="background: orange">123</td></tr>
+    </tbody>
+</table>
+
+
+
+
+<!--Форма-->
+<form id="form" action="/" method="post">
+    <h2>Форма</h2><br>
+
+    <label>
+        Имя: <br>
+        <input name="field-name" value="Введите ваше имя"/>
+    </label> <br>
+
+    <label>
+        Ваш email: <br>
+        <input name="field-email" type="email" value="Введите email"/>
+    </label><br>
+
+    <label >
+        Дата: <br>
+        <input name="field-data" type="date" value=""/>
+    </label> <br>
+
+    <label>
+        Ваш пол: <br>
+        <input type="radio" name="radio-button-1">
+        М
+    </label>
+
+    <label >
+        <input type="radio" name="radio-button-1">
+        Ж
+    </label><br>
+
+    <label>
+        Кол-во конечностей: <br>
+        <input type="radio" name="radio-button-2">
+        1
+    </label>
+    <label>
+        <input type="radio" name="radio-button-2">
+        2
+    </label>
+    <label>
+        <input type="radio" name="radio-button-2">
+        3
+    </label>
+    <label>
+        <input type="radio" name="radio-button-2">
+        4
+    </label><br>
+
+    <label>
+        Сверхспособности:
+        <br >
+        <select name="field-name-4[]"
+                multiple="multiple">
+            <option>
+                Бессмертие
+            </option>
+            <option >
+                Прохождение сквозь стены
+            </option>
+            <option >
+                Левитация
+            </option>
+
+        </select>
+    </label><br />
+
+    <label >
+        Биография: <br>
+        <textarea name="field-area" >Введите начало своей биографии
+        </textarea>
+    </label><br>
+
+
+    <label >
+
+        <input type="checkbox" name="checkbox">
+        С контрактом ознакомлен (а)<br>
+    </label>
+
+    <label >
+
+        <input type="submit" value="Отправить">
+
+    </label>
+
+
+</form>
+
+
+<!--Подвал-->
+<footer>
+    <h3 > (с) Крутышка 2022 </h3>
+</footer>
+
+
+
+</body>
+</html>
