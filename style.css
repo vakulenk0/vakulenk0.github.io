@@ -2,7 +2,7 @@ header img {
     height: 291px;
     width: 200px;
     float: left;
-    margin-left: 350px;
+    margin-left: 460px;
     border: 2px solid black;
 }
 
@@ -11,16 +11,22 @@ h2{
     margin-top: 70px;
     display: inline-block;
     text-align: left;
-
 }
 
 form h2 {
     margin-bottom: 60px;
     margin-top: 15px;
-    
+
 }
 
- nav, ol, form, table{
+nav, form, table{
+    max-width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+ol{
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +43,7 @@ ul li {
     margin-right: 10%;
 }
 
- nav, ol, form{
+nav, ol, form{
     background-color: aqua;
     border: 1px solid black;
 }
@@ -57,7 +63,7 @@ th.table-th {
     padding-left: 5px;
 }
 
-#table1 {
+#table {
     margin-bottom: 30px;
     border: 2px solid black;
     max-width: 960px;
@@ -84,3 +90,4 @@ footer {
     background-color: aqua;
     border-top: 1px solid black;
 }
+
