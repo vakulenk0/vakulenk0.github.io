@@ -1,4 +1,4 @@
-
+@media all and (min-device-width: 600px) {
     header img {
         height: 200px;
         width: 135px;
@@ -117,13 +117,116 @@
 
 @media screen and (max-device-width: 600px) {
 
+    header img {
+        height: 200px;
+        width: 135px;
+        float: left;
+        border: 2px solid black;
+        margin-bottom: 5px;
+    }
+
+    header div {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-flow: wrap;
+    }
+
+    #flower, #shapes {
+        display: block;
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+    }
+
+    header h2 {
+        margin-left: 5px;
+    }
+
+    form h2 {
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav, ol, form {
+        background-color: aqua;
+        border: 1px solid black;
+    }
+
+    footer h3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th.table-th {
+        padding-left: 5px;
+    }
+
+    #table {
+        width: 100%;
+        border: 2px solid black;
+        text-align: center;
+
+    }
+
+
+    #table1.Union {
+        background-color: orange;
+    }
+
+    header {
+        width: 100%;
+        background-color: aqua;
+        border-bottom: 1px solid black;
+    }
+    main {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        background-color: aqua;
+        border-top: 1px solid black;
+    }
+
+
+    footer div, main, body, nav, header div {
+        display: flex;
+    }
+
+    body, main {
+        flex-direction: column;
+    }
+
     main nav {
         flex-direction: column;
     }
 
-    header, main, footer {
-        width: 100%;
+    nav a {
+        flex: 1;
+        text-decoration: none;
     }
+    
+
+    form h2 {
+        display: block;
+        text-align: center;
+    }
+
+    form, table, nav {
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+
+<!-- -->
+
 
     main nav h3, main form h2, main form div, main table{
         text-align: left;
