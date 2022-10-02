@@ -1,46 +1,40 @@
+
 header img {
-    height: 291px;
-    width: 200px;
+    height: 200px;
+    width: 135px;
     float: left;
-    margin-left: 460px;
     border: 2px solid black;
+    margin-bottom: 5px;
 }
 
-h2{
-    margin-bottom: 200px;
-    margin-top: 70px;
-    display: inline-block;
-    text-align: left;
+header div{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+}
+
+#flower, #shapes{
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+}
+
+header h2 {
+    margin-left: 5px;
 }
 
 form h2 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-top: 15px;
-
 }
 
-nav, form, table{
-    max-width: 960px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-}
-ol{
+main{
+    width: 100%;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
-}
-
-nav ul {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-ul li {
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 nav, ol, form{
@@ -48,15 +42,9 @@ nav, ol, form{
     border: 1px solid black;
 }
 
-
-
-header, form{
-    margin-bottom: 20px;
-
-}
-
 footer h3 {
-    padding-left: 20px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 th.table-th {
@@ -64,11 +52,10 @@ th.table-th {
 }
 
 #table {
-    margin-bottom: 30px;
+    width: 100%;
     border: 2px solid black;
-    max-width: 960px;
     text-align: center;
-    width: 960px;
+
 }
 
 
@@ -78,16 +65,82 @@ th.table-th {
 
 header {
     width:100%;
-    padding: 10px;
     background-color: aqua;
     border-bottom: 1px solid black;
-    margin-bottom: 20px;
 }
 
 footer {
     width:100%;
-    padding: 10px;
     background-color: aqua;
     border-top: 1px solid black;
 }
 
+
+footer div, main, body, nav, header div{
+    display: flex;
+}
+
+body, main {
+    flex-direction: column;
+}
+
+main nav {
+    flex-direction: row;
+}
+
+nav a {
+    flex: 1;
+    text-decoration: none;
+}
+
+nav a h3 {
+    text-align: center;
+
+}
+
+form div {
+    text-align: center;
+}
+
+form h2 {
+    display: block;
+    text-align: center;
+}
+
+form, table, nav {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+
+
+
+@media all and (max-device-width: 600px) {
+
+    main nav {
+        flex-direction: column;
+    }
+
+    header, main, footer {
+        width: 100%;
+    }
+
+    main nav h3, main form h2, main form div, main table{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    header h2 {
+        display: block;
+        margin: auto;
+    }
+
+    #main_form_div {
+        order: 1;
+    }
+
+    #main_table_div{
+        order: 2;
+    }
+
+}
