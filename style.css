@@ -53,6 +53,10 @@
         height: 100%;
     }
 
+     main {
+        background-image: url("https://i.playground.ru/p/W4wuQ-IExzVHN8CFFi7QDw.jpeg");
+    }
+
     main div a {
         display: block;
         text-decoration: none;
