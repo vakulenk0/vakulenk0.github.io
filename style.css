@@ -9,59 +9,24 @@
 
     header div {
         width: 100%;
-        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
         flex-flow: wrap;
-    }
-
-    #flower, #shapes {
-        display: block;
-        max-width: 500px;
-        max-height: 500px;
-        width: 100%;
     }
 
     header h2 {
         margin: auto;
     }
 
-    form h2 {
-        margin-bottom: 30px;
-        margin-top: 15px;
-    }
-
     main {
         width: 100%;
-        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    nav, ol, form {
-        background-color: aqua;
-        border: 1px solid black;
     }
 
     footer h3 {
         text-align: left;
         margin-left: 35px;
-    }
-
-    th.table-th {
-        padding-left: 5px;
-    }
-
-    #table {
-        width: 100%;
-        border: 2px solid black;
-        text-align: center;
-
-    }
-
-
-    #table1.Union {
-        background-color: orange;
     }
 
     header {
@@ -76,85 +41,46 @@
         border-top: 1px solid black;
     }
 
-
-    footer div, main, body, nav, header div {
+    footer div, main, body, header div, #main_div {
         display: flex;
     }
 
-    body, main {
+    body,main, main div{
         flex-direction: column;
     }
 
-    main nav {
-        flex-direction: column;
+    main, main div {
+        height: 100%;
     }
 
-    nav a {
-        flex: 1;
-        text-decoration: none;
-    }
-
-    nav a h3 {
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    form div {
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    form h2 {
+    main div a {
         display: block;
-        text-align: left;
-        margin-left: 70px;
+        text-decoration: none;
+        width: 300px;
+        background-color: aqua;
+        border: 1px solid black;
+        text-align: center;
     }
 
-    form, table, nav {
-        margin-bottom: 4px;
-        margin-top: 4px;
+    #main_div {
+        margin: auto;
     }
 
-    #main_form_div {
-        order: 1;
+    #container_links {
+        margin-top: 230px;
     }
-
-    #main_table_div{
-        order: 2;
-    }
-
 
 
 
 @media screen and (min-device-width: 600px) {
 
+    header div{
+        max-width: 960px;
+    }
+
     header h2 {
         margin-left: 5px;
     }
-
-    main nav {
-        flex-direction: row;
-    }
-
-    #main_form_div {
-        order: 2;
-    }
-
-    #main_table_div{
-        order: 1;
-    }
-
-    form h2 {
-        display: block;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    form div {
-        text-align: center;
-        margin-left: 0;
-    }
-
 
 
 }
