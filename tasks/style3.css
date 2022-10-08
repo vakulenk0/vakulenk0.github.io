@@ -9,7 +9,6 @@
 
     header div {
         width: 100%;
-        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
         flex-flow: wrap;
@@ -33,12 +32,11 @@
 
     main {
         width: 100%;
-        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    nav, ol, form {
+    nav, #Number_list, form {
         background-color: aqua;
         border: 1px solid black;
     }
@@ -56,7 +54,6 @@
         width: 100%;
         border: 2px solid black;
         text-align: center;
-
     }
 
 
@@ -128,6 +125,10 @@
 
 @media screen and (min-device-width: 600px) {
 
+    header div, main{
+        max-width: 960px;
+    }
+
     header h2 {
         margin-left: 5px;
     }
@@ -155,10 +156,8 @@
         margin-left: 0;
     }
 
-    nav a h3{
+    nav a h3 {
         text-align: center;
     }
-
-
 
 }
