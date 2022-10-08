@@ -41,7 +41,7 @@
         border-top: 1px solid black;
     }
 
-    footer div, main, body, header div, #main_div {
+    footer div, main, body, header div, #main_div,#container_links {
         display: flex;
     }
 
@@ -53,8 +53,10 @@
         height: 100%;
     }
 
-     main {
-        background-image: url("https://i.playground.ru/p/W4wuQ-IExzVHN8CFFi7QDw.jpeg");
+    main {
+        background-image: url("http://risovach.ru/upload/2015/11/mem/uhadiiii_99153467_orig_.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 
     main div a {
@@ -71,9 +73,8 @@
     }
 
     #container_links {
-        margin-top: 150px;
+        margin-top: 130px;
     }
-
 
 
 @media screen and (min-device-width: 600px) {
@@ -86,5 +87,11 @@
         margin-left: 5px;
     }
 
+    main {
+        background-image: url("https://i.ytimg.com/vi/zgLlHgYes58/maxresdefault.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
 
 }
