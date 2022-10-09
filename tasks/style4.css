@@ -1,0 +1,67 @@
+
+header img {
+    height: 200px;
+    width: 135px;
+    float: left;
+    border: 2px solid black;
+}
+
+header div {
+    width: 100%;
+    flex-flow: wrap;
+}
+
+#flower, #shapes {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+}
+
+
+main {
+    width: 100%;
+}
+
+nav, #Number_list, form {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#table {
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+#table1.Union {
+    background-color: orange;
+}
+
+header {
+    width: 100%;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    background-color: aqua;
+    border-top: 1px solid black;
+}
+
+nav a {
+    flex: 1;
+    text-decoration: none;
+}
+
+nav a h3 {
+    text-align: left;
+}
+
+form h2 {
+    display: block;
+}
+
+
