@@ -15,6 +15,6 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    let a = document.getElementById("button1");
-    a.addEventListener("click", calcCost);
+    let c = document.getElementById("button1");
+    c.addEventListener("click", calcCost);
 })
