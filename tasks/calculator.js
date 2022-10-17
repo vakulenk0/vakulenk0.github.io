@@ -1,16 +1,20 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener("DOMContentLoaded", function() {
     function calcCost() {
-        let result = document.getElementById('result');
-        let f1 = document.getElementsByName('field1');
-        let f2 = document.getElementsByName('field2');
-        let text = f2[0].value + f1[0].value;
-        const obj = new RegExp('[^0-9]');
-        if (obj.test(text) === true || f2[0].value === '' || f1[0].value === '')
-            alert('Проверьте введённые данные!');
-        else
-            result.innerHTML = (parseInt(f2[0].value) * parseInt(f1[0].value)).toString();
+        let result = document.getElementById("result");
+        let f1 = document.getElementsByName("field1");
+        let f2 = document.getElementsByName("field2");
+        let a = f2[0].value;
+        let b = f1[0].value;
+        let text = a + b;
+        const obj = new RegExp("[^0-9]");
+        if (obj.test(text) === true || a === "" || b === "") {
+            alert("Проверьте введённые данные!");
+        }
+        else {
+            let d = parseInt(a) * parseInt(b);
+            result.innerHTML = d.toString();
+        }
     }
 
-    let a = document.getElementById('button1');
-    a.addEventListener('click', calcCost);
-})
+    let c = document.getElementById("button1");
+    c.addEventListener("click", calcCost); });
