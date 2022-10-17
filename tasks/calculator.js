@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function() {
             alert("Проверьте введённые данные!");
         }
         else{
-            result.innerHTML = ((parseInt(f2[0].value)*parseInt(f1[0].value)).toString();
+            result.innerHTML = ((parseInt(a)*parseInt(b)).toString();
         }
     }
 
