@@ -10,11 +10,11 @@ window.addEventListener("DOMContentLoaded", function() {
     optionsOfPhone.forEach(function (element){element.flag = 0;});
     let ChooseAuto = document.getElementsByName("radio");
     ChooseAuto.forEach(function (element){element.checked = false;});
-    let flagAuto = 0, flagPhone = 0, flag = 0;
+    let flagAuto = 0; let flagPhone = 0; let temp = 0;
     let bufer = 0;
     let field = document.getElementsByName("field1");
     field[0].value = "1";
-    Change();
+    let func = new Change();
 
     function Change(){
         if(sel.value === "20000"){
@@ -44,19 +44,20 @@ window.addEventListener("DOMContentLoaded", function() {
             field[0].value = "1";
             bufer = 5;
         }
+        return 0;
     }
     optionsOfPhone.forEach(function (element){
         element.addEventListener("change", function (){
             if(element.flag === 0){
                 bufer += parseInt(element.value);
-                let temp = parseInt(field[0].value);
-                result.innerHTML = (bufer*temp).toString();
+                temp = parseInt(field[0].value);
+                result.innerHTML = bufer*temp;
                 element.flag = 1;
             }
             else{
                 bufer -= parseInt(element.value);
-                let temp = parseInt(field[0].value);
-                result.innerHTML = (bufer*temp).toString();
+                temp = parseInt(field[0].value);
+                result.innerHTML = bufer*temp;
                 element.flag = 0;
             }
         });
@@ -66,7 +67,7 @@ window.addEventListener("DOMContentLoaded", function() {
         element.addEventListener("change", function (){
             result.innerHTML = element.value;
             bufer = parseInt(element.value);
-        })
+        });
     });
 
     let button = document.getElementById("button1");
@@ -78,7 +79,7 @@ window.addEventListener("DOMContentLoaded", function() {
             alert("Проверьте введённые данные!");
         }
         else {
-            result.innerHTML = (parseInt(a)*bufer).toString();
+            result.innerHTML = parseInt(a)*bufer;
         }
     }
 
