@@ -11,10 +11,10 @@ window.addEventListener("DOMContentLoaded", function() {
     let ChooseAuto = document.getElementsByName("radio");
     ChooseAuto.forEach(function (element){element.checked = false;});
     let flagAuto = 0; let flagPhone = 0; let temp = 0;
-    let bufer = 0;
+    let bufer = 20000;
     let field = document.getElementsByName("field1");
     field[0].value = "1";
-    let func = new Change();
+
 
     function Change(){
         if(sel.value === "20000"){
