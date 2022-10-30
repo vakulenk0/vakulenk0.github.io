@@ -1,80 +1,80 @@
 
-    header img {
-        height: 200px;
-        width: 135px;
-        float: left;
-        border: 2px solid black;
-        margin-bottom: 5px;
-    }
+header img {
+    height: 200px;
+    width: 135px;
+    float: left;
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
 
-    header div {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        flex-flow: wrap;
-    }
+header div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+}
 
-    header h2 {
-        margin: auto;
-    }
+header h2 {
+    margin: auto;
+}
 
-    main {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    footer h3 {
-        text-align: left;
-        margin-left: 35px;
-    }
+footer h3 {
+    text-align: left;
+    margin-left: 35px;
+}
 
-    header {
-        width: 100%;
-        background-color: aqua;
-        border-bottom: 1px solid black;
-    }
+header {
+    width: 100%;
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
 
-    footer {
-        width: 100%;
-        background-color: aqua;
-        border-top: 1px solid black;
-    }
+footer {
+    width: 100%;
+    background-color: aqua;
+    border-top: 1px solid black;
+}
 
-    footer div, main, body, header div, #main_div,#container_links {
-        display: flex;
-    }
+footer div, main, body, header div, #main_div,#container_links {
+    display: flex;
+}
 
-    body,main, main div{
-        flex-direction: column;
-    }
+body,main, main div{
+    flex-direction: column;
+}
 
-    main, main div {
-        height: 100%;
-    }
+main, main div {
+    height: 100%;
+}
 
-    main {
-        background-image: url("https://i.pinimg.com/736x/26/31/5d/26315deb16f060ef25127b192f5e2599--man-candy-funny-stuff.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
+main {
+    background-image: url("https://i.pinimg.com/736x/26/31/5d/26315deb16f060ef25127b192f5e2599--man-candy-funny-stuff.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
-    main div a {
-        display: block;
-        text-decoration: none;
-        width: 300px;
-        background-color: aqua;
-        border: 1px solid black;
-        text-align: center;
-    }
+main div a {
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+}
 
-    #main_div {
-        margin: auto;
-    }
+#main_div {
+    margin: auto;
+}
 
-    #container_links {
-        margin-top: 80px;
-    }
+#container_links {
+    margin-top: 80px;
+}
 
 
 @media screen and (min-device-width: 600px) {
