@@ -1,1 +1,31 @@
+body {
+    background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1613661249_30-p-fon-dlya-prezentatsii-vistavka-32.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    max-height: 800px;
+    width: 80%;
+    margin: auto;
+}
+
+.gallery div {
+    text-align: center;
+}
+
+.gallery div a img {
+    width: 100%;
+    height: 100%;
+}
 
