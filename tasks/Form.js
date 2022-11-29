@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name[0].value = "";
             Email[0].value = "";
             TextArea[0].value = "";
+            window.location.href = '';
             PopUpHide();
         })
         .catch((err)=>{
