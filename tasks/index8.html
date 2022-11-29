@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pop up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="style8.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script defer src="jquery-3.6.1.js"></script>
+  <script defer src="Form.js"></script>
+
+</head>
+
+
+<body style="height: 100vh; display: flex;">
+
+<div id="wrapper">
+  <div id="button">
+    <a href="javascript: false;" id="b1">
+      <div>
+        <h4>Форма</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="b-popup" id="popup1">
+  <form  action="https://formcarry.com/s/cvJIKThK4" method="POST" accept-charset="UTF-8" id="Form" autocomplete="off" onsubmit="javascript: return proverka();">
+    <div class="b-popup-content">
+      <h4 style="margin-top: 10px">Form</h4>
+      <div id="Name">
+        <label>
+          Name <br>
+          <input type="text" placeholder="Имя" name="Name" value="">
+        </label>
+      </div>
+      <div id="Email">
+        <label>
+          Email <br>
+          <input type="email" placeholder="@Email" name="Email" value="">
+        </label>
+      </div>
+      <div id="Textarea">
+        <label>
+          Сообщение <br>
+          <textarea placeholder="Введите ваше сообщение" name="field" value=""></textarea>
+        </label>
+      </div>
+      <div id="CheckBox">
+        <label>
+          <input type="checkbox" id="check" name="check" style="height: 20px; width: 20px">
+          Согласие с политикой обработки персональных данных
+        </label>
+      </div>
+      <div id="bottomOfForm">
+        <div style="width: 100%; text-align: center">
+          <input type="submit" value="Отправить" name="submit" style="border-radius: 8px; border: 1px solid black">
+        </div>
+        <div style="width: 100%; text-align: end;">
+          <div style="margin-right: 30px">
+            <button style=" border: 1px solid black; border-radius: 8px; margin-top: 5px">
+              <a href="javascript: false;" id="b2" style="text-decoration: none;">Закрыть</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
