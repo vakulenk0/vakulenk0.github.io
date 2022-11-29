@@ -28,30 +28,30 @@
 </div>
 
 <div class="b-popup" id="popup1">
-  <form  action="https://formcarry.com/s/cvJIKThK4" method="POST" accept-charset="UTF-8" id="Form" autocomplete="off" onsubmit="javascript: return proverka();">
+  <form  id="Form" autocomplete="off">
     <div class="b-popup-content">
       <h4 style="margin-top: 10px">Form</h4>
       <div id="Name">
         <label>
           Name <br>
-          <input type="text" placeholder="Имя" name="Name" value="">
+          <input type="text" placeholder="Имя" name="Name" value="" required>
         </label>
       </div>
       <div id="Email">
         <label>
           Email <br>
-          <input type="email" placeholder="@Email" name="Email" value="">
+          <input type="email" placeholder="@Email" name="Email" value="" required>
         </label>
       </div>
       <div id="Textarea">
         <label>
           Сообщение <br>
-          <textarea placeholder="Введите ваше сообщение" name="field" value=""></textarea>
+          <textarea placeholder="Введите ваше сообщение" name="field" value="" required></textarea>
         </label>
       </div>
       <div id="CheckBox">
         <label>
-          <input type="checkbox" id="check" name="check" style="height: 20px; width: 20px">
+          <input type="checkbox" id="check" name="check" style="height: 20px; width: 20px" required>
           Согласие с политикой обработки персональных данных
         </label>
       </div>
