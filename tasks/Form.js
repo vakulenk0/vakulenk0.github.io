@@ -1,12 +1,12 @@
-let name = document.getElementsByName("Name");
-let Email = document.getElementsByName("Email");
-let TextArea = document.getElementsByName("field");
-let check = document.getElementsByName("check");
-var fCkeck = 0;
-var fl = 0;
 document.addEventListener('DOMContentLoaded', function () {
     history.pushState(null, "page 2", "#FORM");
     window.history.back();
+    let name = document.getElementsByName("Name");
+    let Email = document.getElementsByName("Email");
+    let TextArea = document.getElementsByName("field");
+    let check = document.getElementsByName("check");
+    var fCkeck = 0;
+    var fl = 0;
     let bSubmit = document.getElementsByName("submit");
     let form = document.getElementById("Form");
     var f = true;
@@ -34,31 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    bSubmit[0].addEventListener('click', () => {
-        if(name[0].value === '' || TextArea[0].value === '' || fCkeck % 2 === 0 || Email[0].value === '') {
-            if(name[0].value === '') {
-                name[0].classList.add('warning');
-                name[0].focus();
-            }
-            else
-                name[0].classList.remove('warning');
-            if(Email[0].value === '') {
-                Email[0].classList.add('warning');
-                Email[0].focus();
-            }
-            else
-                check[0].classList.remove('warning');
-            if(TextArea[0].value === ""){
-                TextArea[0].classList.add('warning');
-                TextArea[0].focus();
-            }
-            else
-                TextArea[0].classList.remove('warning');
-            if(fCkeck % 2 === 0)
-                alert("Подтвердите согласие на обработку данных!");
-        }
-    })
-
     name[0].addEventListener('change', () => {
         window.localStorage.setItem('name', name[0].value);
     });
@@ -79,7 +54,28 @@ document.addEventListener('DOMContentLoaded', function () {
       fCkeck++;
     });
 
-    bSubmit[0].addEventListener('click', proverka());
+    let frm = document.getElementById('Form');
+    frm.addEventListener("submit", event=>{
+        const url = "https://formcarry.com/form/cvJIKThK4";
+        const data = new FormData(frm);
+        fetch(url,{method: "POST", body: data})
+        .then((res)=>{return res.text();})
+        .then((txt)=>{
+            alert("Данные были отправлены. Успех!");
+            window.localStorage.setItem('name', '');
+            window.localStorage.setItem('email', '');
+            window.localStorage.setItem('textarea', '');
+            name[0].value = "";
+            Email[0].value = "";
+            TextArea[0].value = "";
+            PopUpHide();
+        })
+        .catch((err)=>{
+            alert("Данные не были отправлены. Попробуйте еще раз");
+        });
+        event.preventDefault();
+    });
+
 })
 
 function PopUpShow() {
@@ -90,30 +86,7 @@ function PopUpHide(flag){
     $("#popup1").hide();
 }
 
-function proverka(){
-    if(name[0].value === '' || TextArea[0].value === '' || fCkeck % 2 === 0 || Email[0].value === '') {
-        return false;
-    }
-    else{
-        window.localStorage.setItem('name', '');
-        window.localStorage.setItem('email', '');
-        window.localStorage.setItem('textarea', '');
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', 'https://formcarry.com/form/cvJIKThK4', true);
-        xmlhttp.setRequestHeader('name', name[0].value);
-        xmlhttp.setRequestHeader('email', Email.value);
-        xmlhttp.setRequestHeader('message', TextArea.value);
-        xmlhttp.send();
-        xmlhttp.onreadystatechange = () => {
-          if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-              alert("Данные успешно отправлены!");
-              fl = 1;
-          }
-        };
 
-        return true;
-    }
-}
 
 
 
